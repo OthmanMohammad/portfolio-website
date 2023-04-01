@@ -1,20 +1,19 @@
 @import url('../assets/fonts/fontawesome/css/all.min.css');
 
 :root {
-    --bg-color: #1e1e1e;
-    --text-color: #d4d4d4;
-    --accent-color: #007acc;
-    --hover-color: #4ec9b0;
+    --bg-color: #282a36;
+    --text-color: #efefef;
+    --accent-color: #bd93f9;
+    --hover-color: #1d7188;
 }
 
 body {
     font-family: 'Fira Code', monospace;
     line-height: 1.6;
     margin: 0;
-    padding: 0;
+    padding-left: 100px;
 }
 
-/* Added Code Block Styling */
 pre {
     background-color: #282828;
     border-radius: 5px;
@@ -24,7 +23,6 @@ pre {
     padding: 1rem;
 }
 
-/* Updated anchor link styles */
 a {
     color: var(--accent-color);
     text-decoration: none;
@@ -35,9 +33,14 @@ a:hover {
     color: var(--hover-color);
 }
 
+nav a {
+    font-size: 1.2rem;
+}
+
 nav a:hover {
-    background-color: var(--accent-color);
+    background-color: var(--hover-color);
     border-radius: 5px;
+    color: var(--text-color); /* Add this line to set the text color when hovering nav links */
 }
 
 nav a.active {
@@ -73,19 +76,17 @@ footer {
     text-align: center;
 }
 
-/* Light theme (default) */
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
+    padding-left: 67px;
 }
 
-/* Dark theme */
 body.dark-theme {
     background-color: #333333;
     color: #ffffff;
 }
 
-/* Toggle Theme button */
 #themeToggle {
     background-color: var(--accent-color);
     border: none;
@@ -95,13 +96,12 @@ body.dark-theme {
     font-size: 1rem;
     padding: 0.5rem 1rem;
     transition: all 0.3s ease;
-  }
+}
 
-  #themeToggle:hover {
+#themeToggle:hover {
     background-color: var(--hover-color);
-  }
+}
 
-/* Back to top button */
 .back-to-top {
     background-color: var(--accent-color);
     border: none;
@@ -117,7 +117,6 @@ body.dark-theme {
     z-index: 1000;
 }
 
-/* Loader */
 .loader {
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
@@ -150,7 +149,6 @@ body.dark-theme {
     }
 }
 
-/* Add this to your style.css */
 .loader.fadeOut {
     opacity: 0;
     transition: opacity 0.5s ease;
@@ -158,30 +156,115 @@ body.dark-theme {
 
 .no-animation {
     animation: none !important;
-  }
-  
+}
 
-  header {
+header {
     background-color: var(--bg-color);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 100;
-  }
+}
 
-  .container {
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
-  }
-
-  nav {
+}
+  
+nav {
     display: flex;
     gap: 1rem;
-  }
+}
 
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem; /* Adjust the gap between icons */
+    align-items: center;
+}
   
+.social-icons a:hover::before {
+    background-color: transparent; /* Change the color on hover to transparent */
+    transform: scale(1.3);
+}
+
+
+.social-icons a:hover {
+    color: var(--accent-color); /* Change the color on hover to accent-color */
+}
+
+
+.social-icons a:hover {
+    color: var(--bg-color);
+}
+
+
+.github-icon {
+    background-color: transparent; /* Remove the background color */
+    padding: 0;
+    border-radius: 0;
+}
+
+.lottie-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    background-color: transparent; /* Add this line */
+}
+
+.lottie-icon-container:hover {
+    background-color: rgba(29, 113, 136, 0.4); /* Change the hover-color opacity */
+}
+
+
+
+header, main, footer {
+    z-index: 900;
+    position: relative;
+}
+
+.vertical-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Adjust the gap between icons */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #3a3d57;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 5px;
+    width: 3vw; /* Make the bar narrower */
+}
+
+.vertical-menu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(33, 34, 44, 0.2);
+    border-radius: 5px;
+    transition: none; /* Remove background-color transition */
+}
+
+
+.vertical-menu a:hover {
+    background-color: rgba(33, 34, 44, 0.2); /* Keep the background color the same on hover */
+}
+
+
+nav #themeToggle {
+    margin-left: auto;
+}
