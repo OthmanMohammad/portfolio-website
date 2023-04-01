@@ -1,0 +1,21 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore any build output directory
+build/
+
+# Ignore any IDE-specific files
+.vscode/
+.idea/
+
+# Ignore any compiled files
+*.min.js
+*.min.css
+*.map
+
+# Ignore any log files
+*.log
+
+# Ignore any package-lock.json or yarn.lock files
+package-lock.json
+yarn.lock
