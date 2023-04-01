@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Mohammad's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css"> <!-- Link to CSS file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 </head>
 <body>
-
+    <div class="loader">
+        <div class="spinner"></div>
+    </div>    
 <header>
+    <button id="themeToggle">Toggle Theme</button>
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -19,31 +24,32 @@
 </header>
 
 <main>
-    <section>
-        <h1>About Mohammad</h1>
-        <img src="images/profile.jpg" alt="Profile picture of Mohammad" />
-        <p>
-            Mohammad is a skilled machine learning engineer with experience in Python and C#. He has worked on various machine learning projects and is passionate about showcasing his work and sharing his knowledge.
-        </p>
-        <h2>Education</h2>
-        <ul>
-            <li>Bachelor's Degree in Computer Science - XYZ University</li>
-            <li>Master's Degree in Machine Learning - ABC Institute</li>
-        </ul>
-        <h2>Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>C#</li>
-            <li>Machine Learning</li>
-            <li>Deep Learning</li>
-            <li>Data Analysis</li>
-        </ul>
-    </section>
+    <a name="about"></a>
+    <h1>About Mohammad</h1>
+    <img src="images/profile.jpg" alt="Profile picture of Mohammad" />
+    <p>
+        Mohammad is a skilled machine learning engineer with experience in Python and C#. He has worked on various machine learning projects and is passionate about showcasing his work and sharing his knowledge.
+    </p>
+    <h2>Education</h2>
+    <ul>
+        <li>Bachelor's Degree in Computer Science - XYZ University</li>
+        <li>Master's Degree in Machine Learning - ABC Institute</li>
+    </ul>
+    <h2>Skills</h2>
+    <ul>
+        <li>Python</li>
+        <li>C#</li>
+        <li>Machine Learning</li>
+        <li>Deep Learning</li>
+        <li>Data Analysis</li>
+    </ul>
 </main>
 
 <footer>
     <p>&copy; 2023 Mohammad. All rights reserved.</p>
 </footer>
 
+<button id="backToTop" class="back-to-top">Back to Top</button>
+<script src="script.js"></script>
 </body>
 </html>

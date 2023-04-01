@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Mohammad's Portfolio</title>
     <link rel="stylesheet" href="css/style.css"> <!-- Link to CSS file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 </head>
 <body>
-
+    <div class="loader">
+        <div class="spinner"></div>
+    </div>    
 <header>
+    <button id="themeToggle">Toggle Theme</button>
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -19,7 +23,7 @@
 </header>
 
 <main>
-    <section>
+    <a name="contact">
         <h1>Contact</h1>
         <p>
             If you'd like to get in touch with Mohammad, please fill out the contact form below, and he will get back to you as soon as possible.
@@ -36,12 +40,14 @@
 
             <input type="submit" value="Send Message">
         </form>
-    </section>
+    </a>
 </main>
 
 <footer>
     <p>&copy; 2023 Mohammad. All rights reserved.</p>
 </footer>
 
+<button id="backToTop" class="back-to-top">Back to Top</button>
+<script src="script.js"></script>
 </body>
 </html>

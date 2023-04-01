@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | Mohammad's Portfolio</title>
     <link rel="stylesheet" href="css/style.css"> <!-- Link to CSS file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 </head>
 <body>
-
+    <div class="loader">
+        <div class="spinner"></div>
+    </div>    
 <header>
+    <button id="themeToggle">Toggle Theme</button>
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -19,7 +23,7 @@
 </header>
 
 <main>
-    <section>
+    <a name="projects">
         <h1>Projects</h1>
         <h2>Project 1: Machine Learning Model</h2>
         <p>
@@ -34,12 +38,14 @@
         <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
 
         <!-- Add more projects as needed -->
-    </section>
+    </a>
 </main>
 
 <footer>
     <p>&copy; 2023 Mohammad. All rights reserved.</p>
 </footer>
 
+<button id="backToTop" class="back-to-top">Back to Top</button>
+<script src="script.js"></script>
 </body>
 </html>
