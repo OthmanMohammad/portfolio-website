@@ -41,8 +41,29 @@ nav a:hover {
 }
 
 nav a.active {
+    color: var(--hover-color);
+    font-weight: bold;
+    position: relative;
+}
+
+nav a.active::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
     background-color: var(--accent-color);
-    border-radius: 5px;
+    bottom: -4px;
+    left: 0;
+}
+
+nav a.active::after {
+    content: "▲";
+    position: absolute;
+    font-size: 10px;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--accent-color);
 }
 
 footer {
@@ -162,3 +183,5 @@ body.dark-theme {
     display: flex;
     gap: 1rem;
   }
+
+  
