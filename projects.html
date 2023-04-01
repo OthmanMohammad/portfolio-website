@@ -8,19 +8,28 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 </head>
 <body>
+    <div class="vertical-menu">
+        <a href="YOUR_LINKEDIN_URL" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:YOUR_EMAIL_ADDRESS" class="social-icon"><i class="fas fa-envelope"></i></a>
+        <a href="YOUR_GITHUB_URL" target="_blank">
+            <div class="lottie-icon-container">
+                <div class="lottie-icon" data-src="assets/lottie/github.json" data-loop="true"></div>
+            </div>
+        </a>
+    </div>
     <div class="loader">
         <div class="spinner"></div>
     </div>    
     <header>
         <div class="container">
-            <button id="themeToggle"><i class="fas fa-robot"></i></button>
             <nav>
                 <a href="index.html" class="active">🌌 Home</a>
                 <a href="about.html">👽 About</a>
                 <a href="projects.html">💻 Projects</a>
                 <a href="blog.html">📚 Blog</a>
                 <a href="contact.html">📬 Contact</a>
-              </nav>              
+                <button id="themeToggle"><i class="fas fa-robot"></i></button>
+            </nav>
         </div>
       </header>
       
