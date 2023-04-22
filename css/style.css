@@ -5,6 +5,27 @@
     --text-color: #efefef;
     --accent-color: #bd93f9;
     --hover-color: #1d7188;
+    --main-bg: #282a36;
+    --bg-text: #313340;
+    --titlebar-bg: #1e1f29;
+    --sidebar-bg: #343746;
+    --sidebar-hover-bg: #3c3d51;
+    --explorer-bg: #21222c;
+    --explorer-hover-bg: #313241;
+    --explorer-border: #161a1d;
+    --tabs-bg: #191a21;
+    --tab-bg: #21222c;
+    --transparent-bg: rgba(33,34,44,.2);
+    --tab-active-bg: #282a36;
+    --tab-border: #191a21;
+    --bottombar-bg: #191a21;
+    --bottombar-border: #191a21;
+    --button-bg: #44475a;
+    --button-text: #f8f8f2;
+    --bottombar-hover-bg: #4f4f52;
+    --scrollbar-track-bg: #282a36;
+    --scrollbar-thumb-bg: #454647;
+    --article-bg: #21222c;
 }
 
 body {
@@ -46,7 +67,7 @@ nav a:hover {
 nav a.active {
     font-weight: bold;
     position: relative;
-    background-image: linear-gradient(90deg, #bd93f9, #1d7188, #bd93f9);
+    background-image: linear-gradient(90deg, #a463fe, #e65353, #1e96ff);
     background-size: 200% auto;
     border-radius: 7px; /* Increase the border-radius for a smoother shape */
     color: #fff;
@@ -334,4 +355,63 @@ header, main, footer {
 
 nav #themeToggle {
     margin-left: auto;
+}
+
+main {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 2rem;
+    color: var(--text-color);
+    font-family: JetBrains Mono, monospace;
+    flex: 1 1;
+    height: 85vh;
+    overflow-y: auto;
+}
+
+.home-page-container {
+    color: var(--text-color);
+    font-family: JetBrains Mono, monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    height: 75vh;
+    flex-direction: column;
+    position: relative;
+    display: flex;
+}
+
+.typing-text {
+    font-family: JetBrains Mono, monospace;
+    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
+    width: 26ch;
+    color: #eee;
+    font-weight: 300;
+    position: relative;
+    font-size: 1.75rem;
+    margin: 0.75rem auto 3rem;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid rgb(113, 23, 181);;
+    animation: typing 1.5s steps(24, end), blink-caret .75s step-end infinite 1.5s;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: calc(30% - .15em); /* Adjust the width to consider the border-right width */
+    }
+}
+
+@keyframes blink-caret {
+    0%, 100% {
+        border-color: rgb(113, 23, 181); /* Change the color here */
+    }
+    50% {
+        border-color: transparent;
+    }
 }
