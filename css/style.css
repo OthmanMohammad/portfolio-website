@@ -394,8 +394,7 @@ main {
     margin: 0.75rem auto 3rem;
     overflow: hidden;
     white-space: nowrap;
-    border-right: .15em solid rgb(113, 23, 181);;
-    animation: typing 1.5s steps(24, end), blink-caret .75s step-end infinite 1.5s;
+    animation: typing 1.3s steps(24, end), blink-caret .75s step-end infinite 1.5s;
 }
 
 @keyframes typing {
@@ -409,9 +408,31 @@ main {
 
 @keyframes blink-caret {
     0%, 100% {
-        border-color: rgb(113, 23, 181); /* Change the color here */
+        border-color: rgb(113, 23, 181);
+
+    }
+    25% {
+        border-color: rgb(168, 97, 219);
+
     }
     50% {
+        border-color: rgb(179, 135, 211);
+
+    }
+    75%, 100% {
         border-color: transparent;
+        box-shadow: none;
     }
 }
+
+
+.typing-text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: .15em;
+    border-right: .15em solid rgb(113, 23, 181);
+    animation: blink-caret .75s step-end infinite, glow .75s infinite alternate; 
+  }
