@@ -4,7 +4,7 @@
     --bg-color: #282a36;
     --text-color: #efefef;
     --accent-color: #bd93f9;
-    --hover-color: #1d7188;
+    --hover-color: #7f7171;
     --main-bg: #282a36;
     --bg-text: #313340;
     --titlebar-bg: #1e1f29;
@@ -44,27 +44,27 @@ pre {
     padding: 1rem;
 }
 
-a {
+a:not(main a) {
     color: var(--accent-color);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-a:hover {
+a:not(main a):hover {
     color: var(--hover-color);
 }
 
-nav a {
+.nav-link {
     font-size: 1.2rem;
 }
 
-nav a:hover {
+.nav-link:hover {
     background-color: var(--hover-color);
     border-radius: 7px; /* Increase the border-radius for a smoother shape */
     color: var(--text-color); /* Add this line to set the text color when hovering nav links */
 }
 
-nav a.active {
+.nav-link.active {
     font-weight: bold;
     position: relative;
     background-image: linear-gradient(90deg, #a463fe, #e65353, #1e96ff);
@@ -84,12 +84,11 @@ nav a.active {
 }
 
 
-
-nav a.active:hover {
+.nav-link.active:hover {
     color: #fff;
 }
 
-nav a.active::before {
+.nav-link.active::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -101,7 +100,7 @@ nav a.active::before {
     animation: moving-gradient 5s linear infinite;
 }
 
-nav a.active::after {
+.nav-link.active::after {
     content: "▲";
     position: absolute;
     font-size: 10px;
@@ -136,9 +135,6 @@ nav a.active::after {
         transform: translateX(-90%);
     }
 }
-
-
-
 
 
 
@@ -436,3 +432,30 @@ main {
     border-right: .15em solid rgb(113, 23, 181);
     animation: blink-caret .75s step-end infinite, glow .75s infinite alternate; 
   }
+
+
+
+  .skills-container {
+    margin-top: 2rem;
+  }
+  
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.skill {
+    font-family: JetBrains Mono, monospace;
+    text-align: center;
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    background-color: var(--bg-text);
+    border-radius: 6px;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    transition: background-color 0.3s ease;
+}

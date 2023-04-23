@@ -61,3 +61,28 @@ window.addEventListener('load', () => {
   }, 250);
 });
 
+/* -------------skills in index---------------- */
+
+const skills = document.querySelectorAll('.skill');
+
+skills.forEach((skill) => {
+    const borderColor = generateRandomColor();
+    skill.style.borderColor = borderColor;
+    skill.style.borderWidth = "3px"; // Increase border width
+    skill.style.borderStyle = "solid";
+    skill.style.borderRadius = "12px"; // Make borders rounder
+    skill.addEventListener('mouseover', () => {
+        skill.style.backgroundColor = borderColor;
+    });
+    skill.addEventListener('mouseout', () => {
+        skill.style.backgroundColor = '';
+    });
+});
+
+function generateRandomColor() {
+  const hue = Math.floor(Math.random() * (360 - 200) + 200); // Adjust the hue range (e.g., 200 to 360)
+  const saturation = Math.floor(Math.random() * (100 - 50) + 50); // Adjust the saturation range (e.g., 50% to 100%)
+  const lightness = Math.floor(Math.random() * (70 - 30) + 30); // Adjust the lightness range (e.g., 30% to 70%)
+  return `hsl(${hue}, ${saturation}%, ${lightness}%)`;
+}
+
