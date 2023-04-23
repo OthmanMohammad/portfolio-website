@@ -331,7 +331,6 @@ header, main, footer {
 }
 
 
-
 .vertical-menu a {
     display: flex;
     align-items: center;
@@ -364,18 +363,7 @@ main {
     overflow-y: auto;
 }
 
-.home-page-container {
-    color: var(--text-color);
-    font-family: JetBrains Mono, monospace;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    justify-content: center;
-    height: 75vh;
-    flex-direction: column;
-    position: relative;
-    display: flex;
-}
+/* blinking cursor */
 
 .typing-text {
     font-family: JetBrains Mono, monospace;
@@ -398,7 +386,7 @@ main {
         width: 0;
     }
     to {
-        width: calc(30% - .15em); /* Adjust the width to consider the border-right width */
+        width: 26ch;
     }
 }
 
@@ -421,7 +409,6 @@ main {
     }
 }
 
-
 .typing-text:before {
     content: "";
     position: absolute;
@@ -433,7 +420,7 @@ main {
     animation: blink-caret .75s step-end infinite, glow .75s infinite alternate; 
   }
 
-
+  /* skillset in index */
 
   .skills-container {
     margin-top: 2rem;
@@ -458,4 +445,64 @@ main {
     font-weight: bold;
     margin: 0.5rem 0;
     transition: background-color 0.3s ease;
+}
+
+/* view projects in index */
+
+.view-projects-link {
+    display: inline-block;
+    background-color: var(--accent-color);
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 10px 15px;
+    margin: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.view-projects-link:hover {
+    background-color: var(--hover-color);
+}
+
+/* content divider in index */
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.home-page-container {
+    color: var(--text-color);
+    font-family: JetBrains Mono, monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    height: 75vh;
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    flex: 2;
+    margin-right: 20px;
+}
+
+/* image container in index */
+
+.image-container {
+    flex: 1;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.round-image {
+    border-radius: 50%;
+    width: 400px; /* Adjust this value to set the width of the image */
+    height: 400px; /* Adjust this value to set the height of the image */
+    object-fit: cover;
+    border: 10px solid #36560d;
 }
