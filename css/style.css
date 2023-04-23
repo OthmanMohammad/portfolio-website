@@ -497,3 +497,25 @@ main {
     object-fit: cover;
     border: 10px solid #6e9b32;
 }
+
+
+/* moving rocket */
+
+.rocket-animation-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.rocket {
+    fill: var(--accent-color);
+    width: 24px;
+    height: 24px;
+    position: absolute;
+}
+
+
+
