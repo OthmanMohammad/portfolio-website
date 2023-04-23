@@ -4,7 +4,7 @@
     --bg-color: #282a36;
     --text-color: #efefef;
     --accent-color: #bd93f9;
-    --hover-color: #7f7171;
+    --hover-color: #4a54a292;
     --main-bg: #282a36;
     --bg-text: #313340;
     --titlebar-bg: #1e1f29;
@@ -282,11 +282,15 @@ nav {
     color: var(--accent-color); /* Change the color on hover to accent-color */
 }
 
-
-.social-icons a:hover {
-    color: var(--bg-color);
+/* Add the following rules to target the LinkedIn and mail icons on hover */
+.social-icons .linkedin-icon:hover > .fab.fa-linkedin,
+.social-icons .mail-icon:hover > .fas.fa-envelope {
+    color: white; /* Set the color to white on hover */
 }
 
+
+
+  
 .github-logo {
     height: 30px;
     width: 30px;
@@ -495,7 +499,7 @@ main {
     width: 380px; /* Adjust this value to set the width of the image */
     height: 380px; /* Adjust this value to set the height of the image */
     object-fit: cover;
-    border: 10px solid #6e9b32;
+    border: 10px solid rgba(0, 0, 0, 0.296);
 }
 
 
@@ -518,4 +522,11 @@ main {
 }
 
 
-
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
