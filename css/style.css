@@ -480,7 +480,6 @@ main {
     padding: 0;
     box-sizing: border-box;
     justify-content: center;
-    height: 75vh;
     flex-direction: column;
     position: relative;
     display: flex;
@@ -501,8 +500,8 @@ main {
 
 .round-image {
     border-radius: 50%;
-    width: 400px; /* Adjust this value to set the width of the image */
-    height: 400px; /* Adjust this value to set the height of the image */
+    width: 380px; /* Adjust this value to set the width of the image */
+    height: 380px; /* Adjust this value to set the height of the image */
     object-fit: cover;
-    border: 10px solid #36560d;
+    border: 10px solid #6e9b32;
 }
