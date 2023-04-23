@@ -80,9 +80,22 @@ skills.forEach((skill) => {
 });
 
 function generateRandomColor() {
-  const hue = Math.floor(Math.random() * (360 - 200) + 200); // Adjust the hue range (e.g., 200 to 360)
-  const saturation = Math.floor(Math.random() * (100 - 50) + 50); // Adjust the saturation range (e.g., 50% to 100%)
-  const lightness = Math.floor(Math.random() * (70 - 30) + 30); // Adjust the lightness range (e.g., 30% to 70%)
-  return `hsl(${hue}, ${saturation}%, ${lightness}%)`;
+  const hue = Math.floor(Math.random() * 360); // random hue
+  let saturation = Math.floor(Math.random() * 50) + 50; // saturation between 50% and 100%
+  let lightness = Math.floor(Math.random() * 31) + 40; 
+  let color;
+
+  if (hue >= 200 && hue <= 240) { // blue range
+    color = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
+  } else if ((hue >= 350 && hue <= 360) || (hue >= 0 && hue <= 10) || (hue >= 340 && hue <= 345)) { // cherry red range
+    saturation = Math.floor(Math.random() * 51) + 50; // saturation between 50% and 100%
+    lightness = Math.floor(Math.random() * 21) + 25;
+    color = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
+  } else { // other colors
+    color = generateRandomColor();
+  }
+
+  return color;
 }
+
 

@@ -32,3 +32,31 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
 });
+
+
+/* lottie icons */
+
+document.addEventListener("DOMContentLoaded", function() {
+    const lottieIcons = document.querySelectorAll(".lottie-icon");
+
+    lottieIcons.forEach((icon) => {
+        const animation = lottie.loadAnimation({
+            container: icon,
+            renderer: "svg",
+            loop: JSON.parse(icon.dataset.loop),
+            autoplay: true,
+            path: icon.dataset.src,
+        });
+
+        icon.parentElement.addEventListener("mouseenter", () => {
+            animation.setDirection(1);
+            animation.play();
+        });
+
+        icon.parentElement.addEventListener("mouseleave", () => {
+            animation.setDirection(-1);
+            animation.play();
+        });
+    });
+});
+

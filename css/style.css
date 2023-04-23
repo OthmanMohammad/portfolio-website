@@ -435,6 +435,7 @@ main {
 
 .skill {
     font-family: JetBrains Mono, monospace;
+    font-size: 0.85em;
     text-align: center;
     color: var(--text-color);
     cursor: pointer;
