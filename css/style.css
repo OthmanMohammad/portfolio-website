@@ -288,6 +288,12 @@ nav {
     vertical-align: middle;
 }
 
+.huggingface-logo {
+    height: 32px;
+    width: 32px;
+    vertical-align: middle;
+}
+
 .tensorflow-logo {
     height: 26px;
     width: 26px;
