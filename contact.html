@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css"> <!-- Link to CSS file -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 </head>
-<body>
+<body class="contact-page">
     <div class="vertical-menu">
         <a href="YOUR_LINKEDIN_URL" target="_blank" class="social-icon icon"><i class="fab fa-linkedin"></i></a>
         <a href="mailto:YOUR_EMAIL_ADDRESS" class="social-icon icon"><i class="fas fa-envelope"></i></a>
@@ -36,28 +36,23 @@
       
 
 <main>
-    <a name="contact">
-        <h1>Contact</h1>
-        <p>
-            If you'd like to get in touch with Mohammad, please fill out the contact form below, and he will get back to you as soon as possible.
-        </p>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+    <div class="social-links">
+        <h3>Find Me On</h3>
+        <h4>Mohammad Othman:</h4>
+        <ul>
+            <li><span class="logo"><img src="assets/images/mail.png" alt="Email Logo"></span> <span class="label">Email:</span> <a class="links" href="mailto:Mo@MohammadOthman.com">Mo@MohammadOthman.com</a></li>
+            <li><span class="logo"><img src="assets/images/linkedIn.png" alt="LinkedIn Logo"></span> <span class="label">LinkedIn:</span> <a class="links" href="https://www.linkedin.com/in/real-mohammad-othman/" target="_blank">linkedin.com/in/real-mohammad-othman/</a></li>
+            <li><span class="logo"><img src="assets/images/github.png" alt="GitHub Logo"></span> <span class="label">GitHub:</span> <a class="links" href="https://github.com/OthmanMohammad" target="_blank">github.com/OthmanMohammad</a></li>
+            <li><span class="logo"><img src="assets/images/huggingface.png" alt="HuggingFace Logo"></span> <span class="label">HuggingFace:</span> <a class="links" href="https://huggingface.co/TheNLPguy" target="_blank">huggingface.co/TheNLPguy</a></li>
+            <li><span class="logo"><img src="assets/images/Logo.png" alt="Website Logo"></span> <span class="label">Website:</span> <a class="links" href="https://mohammadothman.com/" target="_blank">MohammadOthman.com</a></li>
+        </ul>
+    </div>
+    
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <input type="submit" value="Send Message">
-        </form>
-    </a>
 </main>
 
-<button id="backToTop" class="back-to-top">Back to Top</button>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.14/lottie.min.js"></script>
+
 <script src="assets/scripts/script.js"></script>
 <script src="assets/scripts/main.js"></script>
 </body>
