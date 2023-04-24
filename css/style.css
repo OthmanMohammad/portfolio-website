@@ -4,7 +4,7 @@
     --bg-color: #282a36;
     --text-color: #efefef;
     --accent-color: #bd93f9;
-    --hover-color: #4a54a292;
+    --hover-color: #b6b7b8ab;
     --main-bg: #282a36;
     --bg-text: #313340;
     --titlebar-bg: #1e1f29;
@@ -281,15 +281,6 @@ nav {
 .social-icons a:hover {
     color: var(--accent-color); /* Change the color on hover to accent-color */
 }
-
-/* Add the following rules to target the LinkedIn and mail icons on hover */
-.social-icons .linkedin-icon:hover > .fab.fa-linkedin,
-.social-icons .mail-icon:hover > .fas.fa-envelope {
-    color: white; /* Set the color to white on hover */
-}
-
-
-
   
 .github-logo {
     height: 30px;
@@ -530,3 +521,42 @@ h1 {
     margin-bottom: 0.5rem;
     text-align: center;
   }
+
+  .about-page::after {
+    content: "Research";
+    position: fixed;
+    top: 4;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Space Mono', monospace;
+    font-size: 12rem;
+    color: rgba(255, 255, 255, 0.1);
+    z-index: -1;
+}
+
+ul {
+    list-style-type: none;
+  }
+  
+  li::before {
+    content: "★ ";
+    color: gold;
+    font-size: 1.2em;
+    margin-right: 0.5em;
+  }
+  
+  
+.links {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-family: JetBrains Mono, monospace;
+    transition: color 0.3s ease;
+}
+
+.links:hover {
+    color: var(--hover-color);
+}
