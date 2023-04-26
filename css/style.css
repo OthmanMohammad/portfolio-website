@@ -607,3 +607,94 @@ ul {
     font-size: 1.6rem;
     vertical-align: middle;
 }
+
+/* in projects page */
+
+
+h2 {
+    text-align: center;
+    position: relative;
+  }
+  
+  h2::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 1px;
+    background-color: var(--text-color);
+    bottom: -10px;
+  }
+  
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem;
+    gap: 1.5rem;
+}
+
+.project-card {
+    background-color: var(--bg-text);
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 300px; /* Adjust the width here to resize the project cards */
+}
+  
+  .project-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .project-content {
+    padding: 1rem;
+  }
+  
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  
+  .project-tags span {
+    font-family: JetBrains Mono, monospace;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: .1rem solid #ee5903;
+    margin: .5rem .5rem 0 0;
+    padding: .2rem .5rem;
+    border-radius: 20px;
+    font-size: .75rem;
+    transition: all .2s;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+  }
+  
+  .project-tags span:hover {
+    background-color: #ee5903;
+    color: var(--text-color);
+  }
+
+  /* style the Code button in projects */
+.project-link {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.code-link {
+    text-decoration: none;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.code-link:hover {
+    background-color: #ee5903;
+    color: var(--text-color);
+}
