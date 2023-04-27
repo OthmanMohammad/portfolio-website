@@ -1,155 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mohammad Othman | Projects</title>
-    <link rel="icon" href="assets/images/tf-icon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="assets/images/tf-icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css"> <!-- Link to CSS file -->
+    <link rel="icon" href="assets/images/tf-icon.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/tf-icon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Link to CSS file -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl7/1L_dstPt3VEKLrw8Xf5zDQk5OIoe5xJHv5Mr5J" crossorigin="anonymous">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl7/1L_dstPt3VEKLrw8Xf5zDQk5OIoe5xJHv5Mr5J"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
     <div class="vertical-menu">
-        <a href="https://www.linkedin.com/in/real-mohammad-othman" target="_blank" class="social-icon icon"><img src="assets/images/linkedIn.png" alt="LinkedIn" class="github-logo"></a>
-        <a href="mailto:Mo@MohammadOthman.com" class="social-icon icon"><img src="assets/images/mail.png" alt="Mail" class="github-logo"></a>
-        <a href="https://github.com/OthmanMohammad" target="_blank" class="social-icon"><img src="assets\images\github.jpg" alt="GitHub" class="github-logo"></a>
-        <a href="https://huggingface.co/TheNLPguy" target="_blank" class="social-icon icon"><img src="assets\images\huggingface.png" alt="huggingface" class="huggingface-logo"></a>
-        <a href="projects.html" class="social-icon"><img src="assets\images\tensorflow.png" alt="Projects" class="tensorflow-logo"></a>
-    </div>    
+      <a
+        href="https://www.linkedin.com/in/real-mohammad-othman"
+        target="_blank"
+        class="social-icon icon"
+        ><img
+          src="assets/images/linkedIn.png"
+          alt="LinkedIn"
+          class="github-logo"
+      /></a>
+      <a href="mailto:Mo@MohammadOthman.com" class="social-icon icon"
+        ><img src="assets/images/mail.png" alt="Mail" class="github-logo"
+      /></a>
+      <a
+        href="https://github.com/OthmanMohammad"
+        target="_blank"
+        class="social-icon"
+        ><img src="assets\images\github.jpg" alt="GitHub" class="github-logo"
+      /></a>
+      <a
+        href="https://huggingface.co/TheNLPguy"
+        target="_blank"
+        class="social-icon icon"
+        ><img
+          src="assets\images\huggingface.png"
+          alt="huggingface"
+          class="huggingface-logo"
+      /></a>
+      <a href="projects.html" class="social-icon"
+        ><img
+          src="assets\images\tensorflow.png"
+          alt="Projects"
+          class="tensorflow-logo"
+      /></a>
+    </div>
     <div class="loader">
-        <svg class="gear-loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="40" stroke="var(--accent-color)" stroke-width="5" fill="none" />
-            <circle cx="50" cy="50" r="3" fill="var(--accent-color)" />
-            <path class="gear" d="M50 10 a 4 4 0 1 1 0.01 0" fill="var(--accent-color)" />
-        </svg>
+      <svg
+        class="gear-loader"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 100 100"
+      >
+        <circle
+          cx="50"
+          cy="50"
+          r="40"
+          stroke="var(--accent-color)"
+          stroke-width="5"
+          fill="none"
+        />
+        <circle cx="50" cy="50" r="3" fill="var(--accent-color)" />
+        <path
+          class="gear"
+          d="M50 10 a 4 4 0 1 1 0.01 0"
+          fill="var(--accent-color)"
+        />
+      </svg>
     </div>
     <header>
-        <div class="container">
-            <nav>
-                <a href="index.html" class="nav-link">🌌 Home</a>
-                <a href="about.html" class="nav-link">👽 About</a>
-                <a href="projects.html" class="active nav-link">💻 Projects</a>
-                <a href="contact.html" class="nav-link">📬 Contact</a>
-            </nav>
-        </div>
-      </header>
-      
+      <div class="container">
+        <nav>
+          <a href="index.html" class="nav-link">🌌 Home</a>
+          <a href="about.html" class="nav-link">👽 About</a>
+          <a href="projects.html" class="active nav-link">💻 Projects</a>
+          <a href="contact.html" class="nav-link">📬 Contact</a>
+        </nav>
+      </div>
+    </header>
 
-      <main>
-        <h2>Machine Learning | Deep Learning</h2>
-        <div class="projects-container">
-          <!-- Project 1 -->
-          <div class="project-card">
-            <img src="assets/images/longformer.jpg" alt="Longformer Learning">
-            <div class="project-content">
-              <h3>Longformer Learning: Next Generation Sentiment Analysis</h3>
-              <p>This project applies the Longformer model to sentiment analysis using the IMDB movie review dataset. The Longformer model, introduced in "Longformer: The Long-Document Transformer," tackles long document processing with sliding-window and global attention mechanisms.</p>
-              <div class="project-tags">
-                <span>PyTorch</span>
-                <span>Transformers</span>
-                <span>Attention</span>
-                <span>Python</span>
-              </div>
-                            <!-- Add this to each project-card -->
-                <div class="project-link">
-                    <a href="https://github.com/OthmanMohammad/Longformer-Learning-Next-Generation-Sentiment-Analysis" target="_blank" class="code-link">Code</a>
-                </div>
+    <main>
+      <h2>Machine Learning | Deep Learning</h2>
+      <div class="projects-container">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <img src="assets/images/longformer.jpg" alt="Longformer Learning" />
+          <div class="project-content">
+            <h3>Longformer Learning: Next Generation Sentiment Analysis</h3>
+            <p>
+              This project applies the Longformer model to sentiment analysis
+              using the IMDB movie review dataset. The Longformer model,
+              introduced in "Longformer: The Long-Document Transformer," tackles
+              long document processing with sliding-window and global attention
+              mechanisms.
+            </p>
+            <div class="project-tags">
+              <span>PyTorch</span>
+              <span>Transformers</span>
+              <span>Attention</span>
+              <span>Python</span>
             </div>
-          </div>
-          <!-- Project 2 -->
-          <div class="project-card">
-            <img src="assets/images/churn.jpg" alt="Churn Prediction">
-            <div class="project-content">
-              <h3>Churn Prediction End-to-End Machine Learning Pipeline</h3>
-              <p>This project is an end-to-end machine learning pipeline with a focus on efficient model deployment using Flask API, Docker, and Amazon EC2. The modular architecture ensures seamless integration and a consistent experience across environments. A CI/CD pipeline with GitHub Actions streamlines development and deployment.</p>
-              <div class="project-tags">
-                <span>Docker</span>
-                <span>Flask</span>
-                <span>XGBoost</span>
-                <span>AWS-EC2</span>
-                <span>CI/CD</span>
-              </div>
-                <!-- Project 3 -->
-                <div class="project-link">
-                <a href="https://github.com/OthmanMohammad/ChurnPrediction-E2E-ML-Pipeline" target="_blank" class="code-link">Code</a>
-            </div>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="assets/images/cov.jpg" alt="covid19 detection GANs">
-            <div class="project-content">
-              <h3>ChestXGAN: Generating Synthetic Chest X-Ray Images using GANs for Covid-19 Detection</h3>
-              <p>ChestXGAN is a deep learning project that uses Generative Adversarial Networks (GANs) to generate synthetic chest X-ray images and detect COVID-19 from them. By using GANs, ChestXGAN can produce realistic-looking chest X-ray images that can help in the training and evaluation of machine learning models for detecting COVID-19.</p>
-              <div class="project-tags">
-                <span>TensorFlow</span>
-                <span>GANs</span>
-                <span>ResNet-50</span>
-                <span>Python</span>
-              </div>
-              <!-- Project 4 -->
-              <div class="project-link">
-                <a href="https://github.com/OthmanMohammad/Covid19DetectionGans" target="_blank" class="code-link">Code</a>
-            </div>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="assets/images/amazonnlp.jpg" alt="Longformer Learning">
-            <div class="project-content">
-              <h3>AmazonReviewNLP: Sentiment Analysis for Customer Reviews</h3>
-              <p>AmazonReviewNLP is a deep learning project that employs Bidirectional Long Short-Term Memory (LSTM) neural networks, a powerful form of Recurrent Neural Networks (RNNs), for advanced sentiment analysis of Amazon customer reviews.</p>
-              <div class="project-tags">
-                <span>TensorFlow</span>
-                <span>Bidirectional LSTM</span>
-                <span>Python</span>
-              </div>
-              <div class="project-link">
-                <a href="https://github.com/OthmanMohammad/AmazonReviewNLP-Sentiment-Analysis-for-Customer-Reviews" target="_blank" class="code-link">Code</a>
-            </div>
+            <!-- Add this to each project-card -->
+            <div class="project-link">
+              <a
+                href="https://github.com/OthmanMohammad/Longformer-Learning-Next-Generation-Sentiment-Analysis"
+                target="_blank"
+                class="code-link"
+                >Code</a
+              >
             </div>
           </div>
         </div>
-        
-        <h2>Software Development</h2>
-        <div class="projects-container">
-          <!-- Project 5 -->
-          <div class="project-card">
-            <img src="assets/images/doctorwhoweb.jpg" alt="Doctor Who Web APIs">
-            <div class="project-content">
-              <h3>Doctor Who Web APIs</h3>
-              <p>This project is a .NET 7 Web API application that serves as a backend for managing Doctor Who related data. It supports CRUD operations for doctors, episodes, and authors, as well as adding companions and enemies to episodes. The application is built using Entity Framework Core for data access, AutoMapper for object mapping, and FluentValidation.</p>
-              <div class="project-tags">
-                <span>C#</span>
-                <span>ASP.NET</span>
-                <span>Web APIs</span>
-                <span>Entity Framework (EF) Core</span>
-              </div>
-              <div class="project-link">
-                <a href="https://github.com/OthmanMohammad/Doctor-Who-Web-APIs" target="_blank" class="code-link">Code</a>
+        <!-- Project 2 -->
+        <div class="project-card">
+          <img src="assets/images/churn.jpg" alt="Churn Prediction" />
+          <div class="project-content">
+            <h3>Churn Prediction End-to-End Machine Learning Pipeline</h3>
+            <p>
+              This project is an end-to-end machine learning pipeline with a
+              focus on efficient model deployment using Flask API, Docker, and
+              Amazon EC2. The modular architecture ensures seamless integration
+              and a consistent experience across environments. A CI/CD pipeline
+              with GitHub Actions streamlines development and deployment.
+            </p>
+            <div class="project-tags">
+              <span>Docker</span>
+              <span>Flask</span>
+              <span>XGBoost</span>
+              <span>AWS-EC2</span>
+              <span>CI/CD</span>
             </div>
-            </div>
-          </div>
-          <!-- Project 6 -->
-          <div class="project-card">
-            <img src="assets/images/doctorwhodb.jpg" alt="Doctor Who Database Project">
-            <div class="project-content">
-              <h3>Doctor Who Database Project</h3>
-              <p>The Doctor Who project is a database project based on the British science fiction television program. The purpose of the project is to create a database that contains information about the Doctor Who universe, including data on episodes, doctors, companions, and enemies.</p>
-              <div class="project-tags">
-                <span>Transact-SQL</span>
-                <span>SQL Server</span>
-              </div>
-              <div class="project-link">
-                <a href="https://github.com/OthmanMohammad/Doctor-Who" target="_blank" class="code-link">Code</a>
-            </div>
+            <!-- Project 3 -->
+            <div class="project-link">
+              <a
+                href="https://github.com/OthmanMohammad/ChurnPrediction-E2E-ML-Pipeline"
+                target="_blank"
+                class="code-link"
+                >Code</a
+              >
             </div>
           </div>
         </div>
-      </main>
+        <div class="project-card">
+          <img src="assets/images/cov.jpg" alt="covid19 detection GANs" />
+          <div class="project-content">
+            <h3>
+              ChestXGAN: Generating Synthetic Chest X-Ray Images using GANs for
+              Covid-19 Detection
+            </h3>
+            <p>
+              ChestXGAN is a deep learning project that uses Generative
+              Adversarial Networks (GANs) to generate synthetic chest X-ray
+              images and detect COVID-19 from them. By using GANs, ChestXGAN can
+              produce realistic-looking chest X-ray images that can help in the
+              training and evaluation of machine learning models for detecting
+              COVID-19.
+            </p>
+            <div class="project-tags">
+              <span>TensorFlow</span>
+              <span>GANs</span>
+              <span>ResNet-50</span>
+              <span>Python</span>
+            </div>
+            <!-- Project 4 -->
+            <div class="project-link">
+              <a
+                href="https://github.com/OthmanMohammad/Covid19DetectionGans"
+                target="_blank"
+                class="code-link"
+                >Code</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="assets/images/amazonnlp.jpg" alt="Longformer Learning" />
+          <div class="project-content">
+            <h3>AmazonReviewNLP: Sentiment Analysis for Customer Reviews</h3>
+            <p>
+              AmazonReviewNLP is a deep learning project that employs
+              Bidirectional Long Short-Term Memory (LSTM) neural networks, a
+              powerful form of Recurrent Neural Networks (RNNs), for advanced
+              sentiment analysis of Amazon customer reviews.
+            </p>
+            <div class="project-tags">
+              <span>TensorFlow</span>
+              <span>Bidirectional LSTM</span>
+              <span>Python</span>
+            </div>
+            <div class="project-link">
+              <a
+                href="https://github.com/OthmanMohammad/AmazonReviewNLP-Sentiment-Analysis-for-Customer-Reviews"
+                target="_blank"
+                class="code-link"
+                >Code</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <h2>Software Development</h2>
+      <div class="projects-container">
+        <!-- Project 5 -->
+        <div class="project-card">
+          <img src="assets/images/doctorwhoweb.jpg" alt="Doctor Who Web APIs" />
+          <div class="project-content">
+            <h3>Doctor Who Web APIs</h3>
+            <p>
+              This project is a .NET 7 Web API application that serves as a
+              backend for managing Doctor Who related data. It supports CRUD
+              operations for doctors, episodes, and authors, as well as adding
+              companions and enemies to episodes. The application is built using
+              Entity Framework Core for data access, AutoMapper for object
+              mapping, and FluentValidation.
+            </p>
+            <div class="project-tags">
+              <span>C#</span>
+              <span>ASP.NET</span>
+              <span>Web APIs</span>
+              <span>Entity Framework (EF) Core</span>
+            </div>
+            <div class="project-link">
+              <a
+                href="https://github.com/OthmanMohammad/Doctor-Who-Web-APIs"
+                target="_blank"
+                class="code-link"
+                >Code</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Project 6 -->
+        <div class="project-card">
+          <img
+            src="assets/images/doctorwhodb.jpg"
+            alt="Doctor Who Database Project"
+          />
+          <div class="project-content">
+            <h3>Doctor Who Database Project</h3>
+            <p>
+              The Doctor Who project is a database project based on the British
+              science fiction television program. The purpose of the project is
+              to create a database that contains information about the Doctor
+              Who universe, including data on episodes, doctors, companions, and
+              enemies.
+            </p>
+            <div class="project-tags">
+              <span>Transact-SQL</span>
+              <span>SQL Server</span>
+            </div>
+            <div class="project-link">
+              <a
+                href="https://github.com/OthmanMohammad/Doctor-Who"
+                target="_blank"
+                class="code-link"
+                >Code</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-<script src="assets/scripts/script.js"></script>
-<script src="assets/scripts/main.js"></script>
-</body>
+    <script src="assets/scripts/script.js"></script>
+    <script src="assets/scripts/main.js"></script>
+  </body>
 </html>
