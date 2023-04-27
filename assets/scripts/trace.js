@@ -29,4 +29,8 @@ function moveRocket() {
     animation.onfinish = moveRocket;
 }
 
-moveRocket();
+// trace.js
+if (rocket) {
+    moveRocket();
+  }
+  

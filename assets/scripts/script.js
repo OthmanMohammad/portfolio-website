@@ -1,27 +1,8 @@
-// Check sessionStorage for the theme
-const savedTheme = sessionStorage.getItem('theme');
-if (savedTheme) {
-  document.body.classList.add(savedTheme);
-}
-
-// Get the theme toggle button and navigation links
-const themeToggle = document.getElementById('themeToggle');
 const navLinks = document.querySelectorAll('nav a');
 
 // Set the current path for highlighting active links
 const currentPath = window.location.pathname;
 
-// Add event listener to the theme toggle button
-themeToggle.addEventListener('click', () => {
-  // Toggle the dark-theme class on the body element
-  if (document.body.classList.contains('dark-theme')) {
-    document.body.classList.remove('dark-theme');
-    sessionStorage.setItem('theme', '');
-  } else {
-    document.body.classList.add('dark-theme');
-    sessionStorage.setItem('theme', 'dark-theme');
-  }
-});
 
 // Highlight the active link based on the current path
 navLinks.forEach((link) => {
@@ -50,16 +31,25 @@ if (!sessionStorage.getItem('navAnimated')) {
 }
 
 // Loader
-const loader = document.querySelector('.loader');
-
 window.addEventListener('load', () => {
-  setTimeout(() => {
-    loader.classList.add('fadeOut');
+  console.log('Window loaded'); // Add this line
+  const loader = document.querySelector('.loader');
+
+  if (loader) {
     setTimeout(() => {
-      loader.style.display = 'none';
-    }, 200);
-  }, 250);
+      loader.classList.add('fadeOut');
+      setTimeout(() => {
+        loader.style.display = 'none';
+      }, 200);
+    }, 250);
+  } else {
+    console.error('Loader element not found');
+  }
 });
+
+
+
+
 
 /* -------------skills in index---------------- */
 
