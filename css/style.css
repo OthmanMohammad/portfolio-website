@@ -29,13 +29,14 @@
 }
 
 body {
-  font-family: "Fira Code", monospace;
-  line-height: 1.6;
-  margin: 0;
-  padding: 2% 2% 2% 100px;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-}
+    font-family: "Fira Code", monospace;
+    line-height: 1.6;
+    margin: 0;
+    padding: 2% 0 2% 100px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
 
 pre {
   background-color: #282828;
@@ -147,11 +148,11 @@ footer {
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  padding-left: 100px;
-  padding-top: 0;
-}
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding-left: 100px;
+    padding-top: 0;
+  }  
 
 body.dark-theme {
   background-color: #333333;
@@ -763,6 +764,10 @@ h2::after {
   background-color: #ee5903;
 }
 
+html {
+    overflow-x: hidden;
+  }
+  
 /* Responsive Design */
 
 @media (max-width: 768px) {
@@ -780,7 +785,6 @@ h2::after {
 
   body {
     padding-left: 20px;
-    padding-right: 20px;
   }
 
   nav {
@@ -810,7 +814,7 @@ h2::after {
 
   .nav-link {
     font-size: calc(0.9rem + 0.3vw);
-    margin-bottom: 1rem;
+    margin-bottom: 0.6rem;
   }
 
   .social-links h3,
@@ -836,8 +840,8 @@ h2::after {
   }
 
   .about-page::after {
-    font-size: 3rem;
-    color: rgba(255, 255, 255, 0.05);
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.1);
   }
 }
 
