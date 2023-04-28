@@ -29,11 +29,14 @@
 }
 
 body {
-  font-family: "Fira Code", monospace;
-  line-height: 1.6;
-  margin: 0;
-  padding-left: 100px;
+    font-family: "Fira Code", monospace;
+    line-height: 1.6;
+    margin: 0;
+    padding: 2% 2% 2% 100px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
+  
 
 pre {
   background-color: #282828;
@@ -148,6 +151,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   padding-left: 100px;
+  padding-top: 0;
 }
 
 body.dark-theme {
@@ -318,7 +322,7 @@ footer {
   justify-content: flex-start;
   padding: 10px;
   border-radius: 5px;
-  width: 3vw;
+  width: 3%;
   height: 100%;
 }
 
@@ -363,7 +367,7 @@ main {
   color: #eee;
   font-weight: 300;
   position: relative;
-  font-size: 1.75rem;
+  font-size: calc(1rem + 1vw);
   margin: 0.75rem auto 3rem;
   overflow: hidden;
   white-space: nowrap;
@@ -424,7 +428,7 @@ main {
 
 .skill {
   font-family: JetBrains Mono, monospace;
-  font-size: 0.85em;
+  font-size: calc(0.65rem + 0.2vw);
   text-align: center;
   color: var(--text-color);
   cursor: pointer;
@@ -445,8 +449,8 @@ main {
   border-radius: 5px;
   color: #ffffff;
   font-weight: 600;
-  padding: 10px 15px;
-  margin: 10px;
+  padding: 1% 3%;
+  margin: 1%;  
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
@@ -515,7 +519,7 @@ main {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: calc(3rem + 1vw);
   font-weight: bold;
   margin: 0;
   padding: 0;
@@ -570,7 +574,7 @@ li::before {
 .social-links h3,
 .social-links h4 {
   margin-bottom: 0.5rem;
-  font-size: 1.5rem; /* Increase the font size */
+  font-size: calc(1.2rem + 0.8vw); /* Increase the font size */
 }
 
 .social-links ul {
@@ -593,13 +597,13 @@ li::before {
 }
 
 .social-links .label {
-  font-size: 1.6rem;
+    font-size: calc(1.2rem + 0.4vw);
   margin-left: 10px;
   vertical-align: middle;
 }
 
 .social-links .links {
-  font-size: 1.6rem;
+ font-size: calc(1.2rem + 0.4vw);
   vertical-align: middle;
 }
 
@@ -623,10 +627,12 @@ h2::after {
 }
 
 .projects-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1.5rem;
-  gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .project-card {
@@ -639,6 +645,8 @@ h2::after {
   margin-bottom: 1rem;
   text-decoration: none;
   color: inherit;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-card img {
@@ -649,6 +657,10 @@ h2::after {
 
 .project-content {
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 700px; 
 }
 
 .project-tags {
@@ -665,7 +677,7 @@ h2::after {
   margin: 0.5rem 0.5rem 0 0;
   padding: 0.2rem 0.5rem;
   border-radius: 20px;
-  font-size: 0.75rem;
+  font-size: calc(0.7rem + 0.3vw);
   transition: all 0.2s;
   background-color: var(--button-bg);
   color: var(--button-text);
@@ -689,7 +701,7 @@ h2::after {
   color: var(--button-text);
   padding: 0.5rem 1rem;
   border-radius: 20px;
-  font-size: 0.9rem;
+  font-size: calc(0.8rem + 0.1vw);
   font-weight: bold;
   transition: all 0.2s;
 }
@@ -721,9 +733,10 @@ h2::after {
     display: none;
   }
 
-  h1 {
-    font-size: 24px;
-  }
+    h1 {
+        font-size: calc(1.8rem + 1vw);
+      }
+    
 
   .content {
     padding: 20px;
@@ -744,32 +757,38 @@ h2::after {
   }
 
   .skill {
-    font-size: 0.75em;
+    font-size: calc(0.65rem + 0.2vw);
     padding: 0.25rem 0.5rem;
     margin: 0.25rem 0;
   }
+  
+  
 
   .projects-container {
     grid-template-columns: repeat(1, 1fr);
   }
 
   header {
-    padding: 1rem 0;
+    padding: 0.5rem 0;
   }
+  
 
   .nav-link {
-    font-size: 16px;
+    font-size: calc(0.9rem + 0.3vw);
     margin-bottom: 1rem;
   }
+  
+  
 
   .social-links h3,
   .social-links h4 {
-    font-size: 18px;
+    font-size: calc(1.2rem + 0.6vw);
   }
-
+  
   .social-links li {
-    font-size: 16px;
+    font-size: calc(1rem + 0.4vw);
   }
+  
 }
 
 @media (max-width: 992px) {
