@@ -748,3 +748,19 @@ h2::after {
   background-color: #ee5903;
   color: var(--text-color);
 }
+
+/* Customize scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: var(--bg-text);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--button-bg);
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #ee5903;
+  }
+  
