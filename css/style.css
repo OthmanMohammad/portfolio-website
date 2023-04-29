@@ -530,7 +530,7 @@ h1 {
 .about-page::after {
     content: "Deep\A Learning\A Research";
     position: fixed;
-    top: 0;
+    top: 4;
     left: 0;
     right: 0;
     bottom: 0;
@@ -538,12 +538,14 @@ h1 {
     align-items: center;
     justify-content: center;
     font-family: "Space Mono", monospace;
-    font-size: 8rem;
-    color: rgba(255, 255, 255, 0.1);
+    font-size: 7rem;
+    color: rgba(255, 255, 255, 0.04);
     z-index: -1;
     letter-spacing: -4px;
+    font-weight: 1000;
     white-space: pre;
     text-align: center;
+    line-height: 1;
   }
   
 
@@ -840,8 +842,7 @@ html {
   }
 
   .about-page::after {
-    font-size: 4rem;
-    color: rgba(255, 255, 255, 0.1);
+    content: "";
   }
 }
 
