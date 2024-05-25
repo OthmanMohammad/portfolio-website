@@ -1,558 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohammad Othman | Projects</title>
-    <link rel="icon" href="assets/images/tf-icon.png" type="image/x-icon" />
-    <link
-      rel="shortcut icon"
-      href="assets/images/tf-icon.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <script>
-      function loadGA() {
-        const gtagID = "G-FN2DE98HVZ";
-
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-          dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
-        gtag("config", gtagID);
-
-        const script = document.createElement("script");
-        script.async = true;
-        script.src = `https://www.googletagmanager.com/gtag/js?id=${gtagID}`;
-        document.head.appendChild(script);
-      }
-
-      document.addEventListener("DOMContentLoaded", loadGA);
-    </script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-      integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl7/1L_dstPt3VEKLrw8Xf5zDQk5OIoe5xJHv5Mr5J"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <aside class="sidebar">
-      <a
-        href="https://www.linkedin.com/in/real-mohammad-othman"
-        target="_blank"
-        class="social-icon icon"
-        ><img
-          src="assets/images/linkedIn.png"
-          alt="LinkedIn"
-          class="github-logo"
-      /></a>
-      <a href="mailto:Mo@MohammadOthman.com" class="social-icon icon"
-        ><img src="assets/images/mail.png" alt="Mail" class="github-logo"
-      /></a>
-      <a
-        href="https://github.com/OthmanMohammad"
-        target="_blank"
-        class="social-icon"
-        ><img src="assets\images\github.jpg" alt="GitHub" class="github-logo"
-      /></a>
-      <a
-        href="https://huggingface.co/MohammadOthman"
-        target="_blank"
-        class="social-icon icon"
-        ><img
-          src="assets\images\huggingface.png"
-          alt="huggingface"
-          class="huggingface-logo"
-      /></a>
-      <a href="projects.html" class="social-icon"
-        ><img
-          src="assets\images\tensorflow.png"
-          alt="Projects"
-          class="tensorflow-logo"
-      /></a>
-    </aside>
-    <div class="loader">
-      <svg
-        class="gear-loader"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 100 100"
-      >
-        <circle
-          cx="50"
-          cy="50"
-          r="40"
-          stroke="var(--accent-color)"
-          stroke-width="5"
-          fill="none"
-        />
-        <circle cx="50" cy="50" r="3" fill="var(--accent-color)" />
-        <path
-          class="gear"
-          d="M50 10 a 4 4 0 1 1 0.01 0"
-          fill="var(--accent-color)"
-        />
-      </svg>
-    </div>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
     <header>
-      <div class="container">
         <nav>
-          <a href="index.html" class="nav-link">🌌 Home</a>
-          <a href="about.html" class="nav-link">👽 About</a>
-          <a href="projects.html" class="active nav-link">💻 Projects</a>
-          <a href="contact.html" class="nav-link">📬 Contact</a>
+            <ul>
+                <li><a href="index.html">👤 Mohammad Othman</a></li>
+                <li><a href="projects.html">💻 Projects</a></li>
+            </ul>
         </nav>
-      </div>
+        <hr class="header-separator">
     </header>
-
     <main>
-      <h2>Machine Learning | Deep Learning</h2>
-      <div class="projects-container">
-        <!-- Project 1 -->
-        <div class="project-card">
-          <a
-            href="https://huggingface.co/MohammadOthman/en_roberta_base_plant_ner_case"
-            target="_blank"
-          >
-            <img
-              src="assets/images/plant_ner_v1.jpg"
-              alt="en_roberta_base_plant_ner_case"
-            />
-          </a>
-          <div class="project-content">
-            <h3>
-              RoBERTa-base Plant NER: A custom RoBERTa-based NER model for
-              vegetable and Fruit taxonomy identification.
-            </h3>
-            <p>
-              The project is a Named Entity Recognition (NER) model that
-              utilizes a custom taxonomy for identifying fruits and vegetables.
-              It is based on the RoBERTa transformer architecture and has been
-              fine-tuned to recognize fruit and vegetable entities within text.
-              The model is available on the Hugging Face model hub.
-            </p>
-            <div class="project-tags card-hover1">
-              <span>Named Entity Recognition (NER)</span>
-              <span>Spacy</span>
-              <span>RoBERTa transformer</span>
-              <span>Hugging Face</span>
-            </div>
-            <div class="project-link">
-              <a
-                href="https://huggingface.co/MohammadOthman/en_roberta_base_plant_ner_case"
-                target="_blank"
-                class="code-link"
-                >Available on HuggingFace</a
-              >
-            </div>
-          </div>
-        </div>
-    <!-- Project 2 -->
-    <div class="project-card">
-      <a
-        href="https://github.com/OthmanMohammad/ML-AutoTrainer-Engine"
-        target="_blank"
-      >
-        <img
-          src="assets/images/MLAutoTrainerEnginer.jpg"
-          alt="ML-AutoTrainer-Engine"
-        />
-      </a>
-      <div class="project-content">
-        <h3>ML AutoTrainer Engine</h3>
-        <p>
-          ML AutoTrainer Engine, developed using Streamlit, is an advanced app designed
-          to automate the machine learning workflow. It provides a user-friendly platform
-          for data processing, model training, and prediction, enabling a seamless,
-          code-free interaction for machine learning tasks.
-        </p>
-        <div class="project-tags card-hover2">
-          <span>Streamlit</span>
-          <span>AutoML</span>
-          <span>Web App</span>
-          <span>Python</span>
-          <span>Machine Learning Pipelines</span>
-        </div>
-        <div class="project-link">
-          <a
-            href="https://github.com/OthmanMohammad/ML-AutoTrainer-Engine"
-            target="_blank"
-            class="code-link"
-            >Code available on GitHub</a
-          >
-        </div>
-      </div>
-    </div>
-               <!-- Project 3 -->
-               <div class="project-card">
-                <a
-                  href="https://github.com/OthmanMohammad/20Newsgroups-QuestionAnswering-Summarization-BERT"
-                  target="_blank"
-                >
-                  <img
-                    src="assets/images/20news.jpg"
-                    alt="20Newsgroups-QuestionAnswering-Summarization-BERT"
-                  />
-                </a>
-                <div class="project-content">
-                  <h3>20Newsgroups classification, QuestionAnswering, and Summarization with BERT, BART, and RoBERTa</h3>
-                  <p>
-                    This repository provides a Flask web application that harnesses
-                    the capabilities of BERT, BART, and RoBERTa models for NLP tasks
-                    on the 20 Newsgroups dataset. The application classifies articles,
-                    generates concise summaries, and answers user-posed questions.
-                  </p>
-                  <div class="project-tags card-hover3">
-                    <span>BERT</span>
-                    <span>RoBERTa</span>
-                    <span>Hugging Face</span>
-                    <span>Flask</span>
-                    <span>Summarization</span>
-                    <span>Question Answering</span>
-                  </div>
-                  <div class="project-link">
-                    <a
-                      href="https://github.com/OthmanMohammad/20Newsgroups-QuestionAnswering-Summarization-BERT"
-                      target="_blank"
-                      class="code-link"
-                      >Code available on GitHub</a
-                    >
-                  </div>
+        <section id="projects" class="section-projects">
+            <div class="container">
+                <h2 class="section-heading">LLMs & Finetuning Projects</h2>
+                <hr class="heading-separator">
+                <div class="projects-container">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <img src="images/plant_ner_v1.jpg" alt="RoBERTa-base Plant NER">
+                        <h3>RoBERTa-base Plant NER</h3>
+                        <p>A custom RoBERTa-based NER model for vegetable and fruit taxonomy identification. This project utilizes a custom taxonomy for identifying fruits and vegetables. It is based on the RoBERTa transformer architecture and has been fine-tuned to recognize fruit and vegetable entities within text. The model is available on the Hugging Face model hub.</p>
+                        <p><strong>Tools and Features:</strong></p>
+                        <ul class="tools-used">
+                            <li>Named Entity Recognition (NER)</li>
+                            <li>Spacy</li>
+                            <li>RoBERTa transformer</li>
+                            <li>Hugging Face</li>
+                        </ul>
+                        <a href="https://huggingface.co/MohammadOthman/en_roberta_base_plant_ner_case" target="_blank">Available on HuggingFace</a>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <img src="images/20news.jpg" alt="20 Newsgroups">
+                        <h3>20 Newsgroups Classification, Question Answering, and Summarization with BERT, BART, and RoBERTa</h3>
+                        <p>This repository provides a Flask web application that harnesses the capabilities of BERT, BART, and RoBERTa models for NLP tasks on the 20 Newsgroups dataset. The application classifies articles, generates concise summaries, and answers user-posed questions.</p>
+                        <p><strong>Tools and Features:</strong></p>
+                        <ul class="tools-used">
+                            <li>BERT</li>
+                            <li>RoBERTa</li>
+                            <li>Hugging Face</li>
+                            <li>Flask</li>
+                            <li>Summarization</li>
+                            <li>Question Answering</li>
+                        </ul>
+                        <a href="https://github.com/OthmanMohammad/20Newsgroups-QuestionAnswering-Summarization-BERT" target="_blank">Code available on GitHub</a>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <img src="images/LLAMA-2-7B-MiniGuanaco.jpg" alt="LLAMA-2-7B-MiniGuanaco">
+                        <h3>LLAMA-2-7B-MiniGuanaco</h3>
+                        <p>LLAMA-2-7B-MiniGuanaco model fine-tuned on the Guanaco dataset with 3k rows using 4-bit quantization type (nf4).</p>
+                        <p><strong>Tools and Features:</strong></p>
+                        <ul class="tools-used">
+                            <li>LLAMA-2-7B</li>
+                            <li>MiniGuanaco Dataset</li>
+                            <li>4-bit Quantization</li>
+                            <li>Bits and Bytes</li>
+                        </ul>
+                        <a href="https://huggingface.co/MohammadOthman/llama-2-7b-miniguanaco" target="_blank">Available on HuggingFace</a>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="project-card">
+                        <img src="images/openhermes-2.5-dpo.jpg" alt="OpenHermes-2.5-Mistral-7B-Orca-DPO">
+                        <h3>OpenHermes-2.5-Mistral-7B-Orca-DPO</h3>
+                        <p>This project involves training the OpenHermes-2.5-Mistral-7B model with the DPO technique using Bits and Bytes library for optimization.</p>
+                        <p><strong>Tools and Features:</strong></p>
+                        <ul class="tools-used">
+                            <li>Mistral-7B</li>
+                            <li>Orca-DPO</li>
+                            <li>Bits and Bytes</li>
+                        </ul>
+                        <a href="https://huggingface.co/MohammadOthman/OpenHermes-2.5-Mistral-7B-Orca-DPO" target="_blank">Available on HuggingFace</a>
+                    </div>
+                    <!-- Project 5 -->
+                    <div class="project-card">
+                        <img src="images/distilbert-deepspeed.jpg" alt="DistilBERT-MRPC-Lightning-DeepSpeed">
+                        <h3>DistilBERT-MRPC-Lightning-DeepSpeed</h3>
+                        <p>This project uses DistilBERT fine-tuned for the MRPC task using PyTorch Lightning and DeepSpeed for optimized performance and scalability.</p>
+                        <p><strong>Tools and Features:</strong></p>
+                        <ul class="tools-used">
+                            <li>DistilBERT</li>
+                            <li>MRPC Task</li>
+                            <li>PyTorch Lightning</li>
+                            <li>DeepSpeed</li>
+                        </ul>
+                        <a href="https://huggingface.co/MohammadOthman/DistilBERT-MRPC-Lightning-DeepSpeed" target="_blank">Available on HuggingFace</a>
+                    </div>
+                    <!-- Project 6 -->
+                    <div class="project-card">
+                        <img src="images/falcon-7b-instruct-truthfulqa.jpg" alt="Falcon-7B-Instruct-TruthfulQA">
+                        <h3>Falcon-7B-Instruct-TruthfulQA</h3>
+                        <p>This model is a fine-tuned version of the `tiiuae/falcon-7b-instruct` using the QLoRA technique on the TruthfulQA dataset.</p>
+                        <p><strong>Tools and Features:</strong></p>
+                        <ul class="tools-used">
+                            <li>tiiuae/falcon-7b-instruct</li>
+                            <li>TruthfulQA Dataset</li>
+                            <li>QLoRA</li>
+                            <li>H100 GPUs</li>
+                        </ul>
+                        <a href="https://huggingface.co/MohammadOthman/falcon-7b-instruct-truthfulqa" target="_blank">Available on HuggingFace</a>
+                    </div>
+                    <!-- Project 7 -->
+                    <div class="project-card">
+                        <img src="images/megatron-gpt2-classification.jpg" alt="Megatron-GPT2-Classification">
+                        <h3>Megatron-GPT2-Classification</h3>
+                        <p>The Megatron-GPT2-Classification model is a language model trained using Megatron and Accelerate frameworks. It has been fine-tuned for classification tasks and benefits from distributed training across 4 GPUs (RTX 4070).</p>
+                        <p><strong>Tools and Features:</strong></p>
+                        <ul class="tools-used">
+                            <li>Megatron</li>
+                            <li>Accelerate</li>
+                            <li>Distributed Training</li>
+                            <li>4 GPUs (RTX 4070)</li>
+                        </ul>
+                        <a href="https://huggingface.co/MohammadOthman/megatron-gpt2-classification" target="_blank">Available on HuggingFace</a>
+                    </div>
+                    <!-- Project 8 -->
+                    <div class="project-card">
+                        <img src="images/mistral-neuralhermes-merge-7b-slerp.jpg" alt="Mistral-NeuralHermes-Merge-7B-slerp">
+                        <h3>Mistral-NeuralHermes-Merge-7B-slerp</h3>
+                        <p>The Mistral-Merge-7B-slerp is a merged model leveraging the spherical linear interpolation (SLERP) technique to blend layers from two distinct transformer-based models.</p>
+                        <p><strong>Tools and Features:</strong></p>
+                        <ul class="tools-used">
+                            <li>SLERP Technique</li>
+                            <li>MergeKit</li>
+                            <li>Transformer-Based Models</li>
+                            <li>Mistral-7B</li>
+                            <li>NeuralHermes-2.5</li>
+                        </ul>
+                        <a href="https://huggingface.co/MohammadOthman/Mistral-NeuralHermes-Merge-7B-slerp" target="_blank">Available on HuggingFace</a>
+                    </div>
                 </div>
-              </div>
 
-               <!-- Project 4 -->
-               <div class="project-card">
-                <a
-                  href="https://github.com/OthmanMohammad/ChurnPrediction-E2E-ML-Pipeline"
-                  target="_blank"
-                >
-                  <img
-                    src="assets/images/churn.jpg"
-                    alt="ChurnPrediction-E2E-ML-Pipeline"
-                  />
-                </a>
-                <div class="project-content">
-                  <h3>Churn Prediction End-to-End Machine Learning Pipeline</h3>
-                  <p>
-                    This project is an end-to-end machine learning pipeline with a
-                    focus on efficient model deployment using Flask API, Docker, and
-                    Amazon EC2. The modular architecture ensures seamless integration
-                    and a consistent experience across environments. A CI/CD pipeline
-                    with GitHub Actions streamlines development and deployment.
-                  </p>
-                  <div class="project-tags card-hover4">
-                    <span>Docker</span>
-                    <span>Flask</span>
-                    <span>XGBoost</span>
-                    <span>AWS-EC2</span>
-                    <span>CI/CD</span>
-                  </div>
-                  <div class="project-link">
-                    <a
-                      href="https://github.com/OthmanMohammad/ChurnPrediction-E2E-ML-Pipeline"
-                      target="_blank"
-                      class="code-link"
-                      >Code available on GitHub</a
-                    >
-                  </div>
+                <h2 class="section-heading">Machine Learning & Deep Learning Projects</h2>
+                <hr class="heading-separator">
+                <div class="projects-container">
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <img src="images/MLAutoTrainerEnginer.jpg" alt="ML AutoTrainer Engine">
+                        <h3>ML AutoTrainer Engine</h3>
+                        <p>ML AutoTrainer Engine, developed using Streamlit, is an advanced app designed to automate the machine learning workflow. It provides a user-friendly platform for data processing, model training, and prediction, enabling a seamless, code-free interaction for machine learning tasks.</p>
+                        <p><strong>Tools and Features:</strong></p>
+                        <ul class="tools-used">
+                            <li>Streamlit</li>
+                            <li>AutoML</li>
+                            <li>Web App</li>
+                            <li>Python</li>
+                            <li>Machine Learning Pipelines</li>
+                        </ul>
+                        <a href="https://github.com/OthmanMohammad/ML-AutoTrainer-Engine" target="_blank">Code available on GitHub</a>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="project-card">
+                        <img src="images/churn.jpg" alt="ChurnPrediction-E2E-ML-Pipeline">
+                        <h3>Churn Prediction End-to-End Machine Learning Pipeline</h3>
+                        <p>This project is an end-to-end machine learning pipeline with a focus on efficient model deployment using Flask API, Docker, and Amazon EC2. The modular architecture ensures seamless integration and a consistent experience across environments. A CI/CD pipeline with GitHub Actions streamlines development and deployment.</p>
+                        <p><strong>Tools and Features:</strong></p>
+                        <ul class="tools-used">
+                            <li>Docker</li>
+                            <li>Flask</li>
+                            <li>XGBoost</li>
+                            <li>AWS-EC2</li>
+                            <li>CI/CD</li>
+                        </ul>
+                        <a href="https://github.com/OthmanMohammad/ChurnPrediction-E2E-ML-Pipeline" target="_blank">Code available on GitHub</a>
+                    </div>
+                    <!-- Project 5 -->
+                    <div class="project-card">
+                        <img src="images/diabetes.jpg" alt="Diabetes-Progression-Predictor">
+                        <h3>Diabetes Progression Predictor</h3>
+                        <p>This project exemplifies a robust ML workflow, leveraging MLflow for experiment tracking, Docker for containerization, TensorFlow Serving for model deployment, and GitHub Actions for CI/CD. It embodies a comprehensive system designed to predict diabetes progression using advanced machine learning paradigms.</p>
+                        <p><strong>Tools and Features:</strong></p>
+                        <ul class="tools-used">
+                            <li>Docker</li>
+                            <li>MLflow</li>
+                            <li>TensorFlow Serving</li>
+                            <li>MLOps</li>
+                            <li>CI/CD</li>
+                        </ul>
+                        <a href="https://github.com/OthmanMohammad/Diabetes-Progression-Predictor" target="_blank">Code available on GitHub</a>
+                    </div>
+                    <!-- Project 6 -->
+                    <div class="project-card">
+                        <img src="images/longformer.jpg" alt="Longformer Learning">
+                        <h3>Longformer Learning: Next Generation Sentiment Analysis</h3>
+                        <p>This project applies the Longformer model to sentiment analysis using the IMDB movie review dataset. The Longformer model, introduced in "Longformer: The Long-Document Transformer," tackles long document processing with sliding-window and global attention mechanisms.</p>
+                        <p><strong>Tools and Features:</strong></p>
+                        <ul class="tools-used">
+                            <li>PyTorch</li>
+                            <li>Transformers</li>
+                            <li>Attention</li>
+                            <li>Python</li>
+                        </ul>
+                        <a href="https://github.com/OthmanMohammad/Longformer-Learning-Next-Generation-Sentiment-Analysis" target="_blank">Code available on GitHub</a>
+                    </div>
+                    <!-- Project 7 -->
+                    <div class="project-card">
+                        <img src="images/cov.jpg" alt="covid19 detection GANs">
+                        <h3>ChestXGAN: Generating Synthetic Chest X-Ray Images using GANs for Covid-19 Detection</h3>
+                        <p>ChestXGAN is a deep learning project that uses Generative Adversarial Networks (GANs) to generate synthetic chest X-ray images and detect COVID-19 from them. By using GANs, ChestXGAN can produce realistic-looking chest X-ray images that can help in the training and evaluation of machine learning models for detecting COVID-19.</p>
+                        <p><strong>Tools and Features:</strong></p>
+                        <ul class="tools-used">
+                            <li>TensorFlow</li>
+                            <li>GANs</li>
+                            <li>ResNet-50</li>
+                            <li>Python</li>
+                        </ul>
+                        <a href="https://github.com/OthmanMohammad/Covid19DetectionGans" target="_blank">Code available on GitHub</a>
+                    </div>
+                    <!-- Project 8 -->
+                    <div class="project-card">
+                        <img src="images/irisflow.jpg" alt="IrisFlow-MLOps-with-Kubernetes-CI-CD">
+                        <h3>IrisFlow: MLOps Project with Flask, Docker, CI/CD, and Kubernetes</h3>
+                        <p>An end-to-end MLOps project integrating Flask, Docker, CI/CD (GitHub Actions), and Kubernetes. This repo demonstrates the development, containerization, automated deployment, and scaling of a simple ML model for iris classification.</p>
+                        <p><strong>Tools and Features:</strong></p>
+                        <ul class="tools-used">
+                            <li>Docker</li>
+                            <li>Kubernetes</li>
+                            <li>Flask</li>
+                            <li>MLOps</li>
+                            <li>CI/CD</li>
+                        </ul>
+                        <a href="https://github.com/OthmanMohammad/IrisFlow-MLOps-with-Kubernetes-CI-CD" target="_blank">Code available on GitHub</a>
+                    </div>
+                    <!-- Project 9 -->
+                    <div class="project-card">
+                        <img src="images/cnn.jpg" alt="MathConvNet">
+                        <h3>MathConvNet: Mathematical Convolutional Neural Network Implementation from Scratch</h3>
+                        <p>This project is a fundamental and mathematical implementation of a Convolutional Neural Network (CNN) from scratch using NumPy. It encompasses all core components of a standard neural network, including forward and backward propagation, convolutional and pooling layers, fully connected layers, and activation functions. The implementation uses the principles of linear algebra, calculus, and statistics, providing a deep insight into the underpinning mechanics of Deep learning models.</p>
+                        <p><strong>Tools and Features:</strong></p>
+                        <ul class="tools-used">
+                            <li>Deep Learning</li>
+                            <li>NumPy</li>
+                            <li>ConvNet</li>
+                            <li>Python</li>
+                        </ul>
+                        <a href="https://github.com/OthmanMohammad/MathConvNet" target="_blank">Code available on GitHub</a>
+                    </div>
+                    <!-- Project 10 -->
+                    <div class="project-card">
+                        <img src="images/amazonnlp.jpg" alt="AmazonReviewNLP">
+                        <h3>Amazon Review NLP: Sentiment Analysis for Customer Reviews</h3>
+                        <p>AmazonReviewNLP is a deep learning project that employs Bidirectional Long Short-Term Memory (LSTM) neural networks, a powerful form of Recurrent Neural Networks (RNNs), for advanced sentiment analysis of Amazon customer reviews.</p>
+                        <p><strong>Tools and Features:</strong></p>
+                        <ul class="tools-used">
+                            <li>TensorFlow</li>
+                            <li>Bidirectional LSTM</li>
+                            <li>Python</li>
+                        </ul>
+                        <a href="https://github.com/OthmanMohammad/AmazonReviewNLP-Sentiment-Analysis-for-Customer-Reviews" target="_blank">Code available on GitHub</a>
+                    </div>
                 </div>
-              </div>
 
-      <!-- Project 5 -->
-      <div class="project-card">
-        <a
-          href="https://github.com/OthmanMohammad/Diabetes-Progression-Predictor"
-          target="_blank"
-        >
-          <img
-            src="assets/images/diabetes.jpg"
-            alt="Diabetes-Progression-Predictor"
-          />
-        </a>
-        <div class="project-content">
-          <h3>Diabetes Progression Predictor</h3>
-          <p>
-            This project exemplifies a robust ML workflow, leveraging MLflow
-            for experiment tracking, Docker for containerization, TensorFlow Serving
-            for model deployment, and GitHub Actions for CI/CD. It embodies a comprehensive
-            system designed to predict diabetes progression using advanced machine learning paradigms.
-          </p>
-          <div class="project-tags card-hover1">
-            <span>Docker</span>
-            <span>MLflow</span>
-            <span>TensorFlow Serving</span>
-            <span>MLOps</span>
-            <span>CI/CD</span>
-          </div>
-          <div class="project-link">
-            <a
-              href="https://github.com/OthmanMohammad/Diabetes-Progression-Predictor"
-              target="_blank"
-              class="code-link"
-              >Code available on GitHub</a
-            >
-          </div>
-        </div>
-      </div>
-
-        <!-- Project 6 -->
-        <div class="project-card">
-          <a
-            href="https://github.com/OthmanMohammad/Longformer-Learning-Next-Generation-Sentiment-Analysis"
-            target="_blank"
-          >
-            <img src="assets/images/longformer.jpg" alt="Longformer Learning" />
-          </a>
-          <div class="project-content">
-            <h3>Longformer Learning: Next Generation Sentiment Analysis</h3>
-            <p>
-              This project applies the Longformer model to sentiment analysis
-              using the IMDB movie review dataset. The Longformer model,
-              introduced in "Longformer: The Long-Document Transformer," tackles
-              long document processing with sliding-window and global attention
-              mechanisms.
-            </p>
-            <div class="project-tags card-hover2">
-              <span>PyTorch</span>
-              <span>Transformers</span>
-              <span>Attention</span>
-              <span>Python</span>
-            </div>
-            <div class="project-link">
-              <a
-                href="https://github.com/OthmanMohammad/Longformer-Learning-Next-Generation-Sentiment-Analysis"
-                target="_blank"
-                class="code-link"
-                >Code available on GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 7 -->
-        <div class="project-card">
-          <a
-            href="https://github.com/OthmanMohammad/Covid19DetectionGans"
-            target="_blank"
-          >
-            <img src="assets/images/cov.jpg" alt="covid19 detection GANs" />
-          </a>
-          <div class="project-content">
-            <h3>
-              ChestXGAN: Generating Synthetic Chest X-Ray Images using GANs for
-              Covid-19 Detection
-            </h3>
-            <p>
-              ChestXGAN is a deep learning project that uses Generative
-              Adversarial Networks (GANs) to generate synthetic chest X-ray
-              images and detect COVID-19 from them. By using GANs, ChestXGAN can
-              produce realistic-looking chest X-ray images that can help in the
-              training and evaluation of machine learning models for detecting
-              COVID-19.
-            </p>
-            <div class="project-tags card-hover3">
-              <span>TensorFlow</span>
-              <span>GANs</span>
-              <span>ResNet-50</span>
-              <span>Python</span>
-            </div>
-            <div class="project-link">
-              <a
-                href="https://github.com/OthmanMohammad/Covid19DetectionGans"
-                target="_blank"
-                class="code-link"
-                >Code available on GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-
-            <!-- Project 8 -->
-            <div class="project-card">
-              <a
-                href="https://github.com/OthmanMohammad/IrisFlow-MLOps-with-Kubernetes-CI-CD"
-                target="_blank"
-              >
-                <img
-                  src="assets/images/irisflow.jpg"
-                  alt="IrisFlow-MLOps-with-Kubernetes-CI-CD"
-                />
-              </a>
-              <div class="project-content">
-                <h3>IrisFlow: MLOps Project with Flask, Docker, CI/CD, and Kubernetes</h3>
-                <p>
-                  An end-to-end MLOps project integrating Flask, Docker, CI/CD (GitHub Actions),
-                  and Kubernetes. This repo demonstrates the development, containerization, automated deployment,
-                  and scaling of a simple ML model for iris classification.
-                </p>
-                <div class="project-tags card-hover4">
-                  <span>Docker</span>
-                  <span>Kubernetes</span>
-                  <span>Flask</span>
-                  <span>MLOps</span>
-                  <span>CI/CD</span>
+                <h2 class="section-heading">Misc Projects</h2>
+                <hr class="heading-separator">
+                <div class="projects-container">
+                    <!-- Misc Project 1 -->
+                    <div class="project-card">
+                        <img src="images/doctorwhoweb.jpg" alt="Doctor Who Web APIs">
+                        <h3>Doctor Who Web APIs</h3>
+                        <p>This project is a .NET 7 Web API application that serves as a backend for managing Doctor Who related data. It supports CRUD operations for doctors, episodes, and authors, as well as adding companions and enemies to episodes. The application is built using Entity Framework Core for data access, AutoMapper for object mapping, and FluentValidation.</p>
+                        <p><strong>Tools and Features:</strong></p>
+                        <ul class="tools-used">
+                            <li>C#</li>
+                            <li>ASP.NET</li>
+                            <li>Web APIs</li>
+                            <li>Entity Framework (EF) Core</li>
+                        </ul>
+                        <a href="https://github.com/OthmanMohammad/Doctor-Who-Web-APIs" target="_blank">Code available on GitHub</a>
+                    </div>
+                    <!-- Misc Project 2 -->
+                    <div class="project-card">
+                        <img src="images/doctorwhodb.jpg" alt="Doctor Who Database Project">
+                        <h3>Doctor Who Database Project</h3>
+                        <p>The Doctor Who project is a database project based on the British science fiction television program. The purpose of the project is to create a database that contains information about the Doctor Who universe, including data on episodes, doctors, companions, and enemies.</p>
+                        <p><strong>Tools and Features:</strong></p>
+                        <ul class="tools-used">
+                            <li>Transact-SQL</li>
+                            <li>SQL Server</li>
+                        </ul>
+                        <a href="https://github.com/OthmanMohammad/Doctor-Who" target="_blank">Code available on GitHub</a>
+                    </div>
                 </div>
-                <div class="project-link">
-                  <a
-                    href="https://github.com/OthmanMohammad/IrisFlow-MLOps-with-Kubernetes-CI-CD"
-                    target="_blank"
-                    class="code-link"
-                    >Code available on GitHub</a
-                  >
-                </div>
-              </div>
             </div>
-
-        <!-- Project 9 -->
-        <div class="project-card">
-          <a
-            href="https://github.com/OthmanMohammad/MathConvNet"
-            target="_blank"
-          >
-            <img src="assets/images/cnn.jpg" alt="MathConvNet" />
-          </a>
-          <div class="project-content">
-            <h3>
-              MathConvNet: Mathematical Convolutional Neural Network Implementation from Scratch
-            </h3>
-            <p>
-              This project is a fundamental and mathematical implementation of
-              a Convolutional Neural Network (CNN) from scratch using NumPy. It encompasses
-              all core components of a standard neural network, including forward and backward 
-              propagation, convolutional and pooling layers, fully connected layers, and activation functions. 
-              The implementation uses the principles of linear algebra, calculus, and statistics, providing a 
-              deep insight into the underpinning mechanics of Deep learning models.
-            </p>
-            <div class="project-tags card-hover1">
-              <span>Deep Learning</span>
-              <span>NumPy</span>
-              <span>ConvNet</span>
-              <span>Python</span>
-            </div>
-            <div class="project-link">
-              <a
-                href="https://github.com/OthmanMohammad/MathConvNet"
-                target="_blank"
-                class="code-link"
-                >Code available on GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-        <!-- Project 10 -->
-        <div class="project-card">
-          <a
-            href="https://github.com/OthmanMohammad/AmazonReviewNLP-Sentiment-Analysis-for-Customer-Reviews"
-            target="_blank"
-          >
-            <img src="assets/images/amazonnlp.jpg" alt="AmazonReviewNLP" />
-          </a>
-          <div class="project-content">
-            <h3>AmazonReviewNLP: Sentiment Analysis for Customer Reviews</h3>
-            <p>
-              AmazonReviewNLP is a deep learning project that employs
-              Bidirectional Long Short-Term Memory (LSTM) neural networks, a
-              powerful form of Recurrent Neural Networks (RNNs), for advanced
-              sentiment analysis of Amazon customer reviews.
-            </p>
-            <div class="project-tags card-hover2">
-              <span>TensorFlow</span>
-              <span>Bidirectional LSTM</span>
-              <span>Python</span>
-            </div>
-            <div class="project-link">
-              <a
-                href="https://github.com/OthmanMohammad/AmazonReviewNLP-Sentiment-Analysis-for-Customer-Reviews"
-                target="_blank"
-                class="code-link"
-                >Code available on GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <h2>Misc Projects</h2>
-      <div class="projects-container">
-        <!-- Project 1 -->
-        <div class="project-card">
-          <a
-            href="https://github.com/OthmanMohammad/Doctor-Who-Web-APIs"
-            target="_blank"
-          >
-            <img
-              src="assets/images/doctorwhoweb.jpg"
-              alt="Doctor Who Web APIs"
-            />
-          </a>
-          <div class="project-content">
-            <h3>Doctor Who Web APIs</h3>
-            <p>
-              This project is a .NET 7 Web API application that serves as a
-              backend for managing Doctor Who related data. It supports CRUD
-              operations for doctors, episodes, and authors, as well as adding
-              companions and enemies to episodes. The application is built using
-              Entity Framework Core for data access, AutoMapper for object
-              mapping, and FluentValidation.
-            </p>
-            <div class="project-tags card-hover1">
-              <span>C#</span>
-              <span>ASP.NET</span>
-              <span>Web APIs</span>
-              <span>Entity Framework (EF) Core</span>
-            </div>
-            <div class="project-link">
-              <a
-                href="https://github.com/OthmanMohammad/Doctor-Who-Web-APIs"
-                target="_blank"
-                class="code-link"
-                >Code available on GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-        <!-- Project 2 -->
-        <div class="project-card">
-          <a
-            href="https://github.com/OthmanMohammad/Doctor-Who"
-            target="_blank"
-          >
-            <img
-              src="assets/images/doctorwhodb.jpg"
-              alt="Doctor Who Database Project"
-            />
-          </a>
-          <div class="project-content">
-            <h3>Doctor Who Database Project</h3>
-            <p>
-              The Doctor Who project is a database project based on the British
-              science fiction television program. The purpose of the project is
-              to create a database that contains information about the Doctor
-              Who universe, including data on episodes, doctors, companions, and
-              enemies.
-            </p>
-            <div class="project-tags card-hover2">
-              <span>Transact-SQL</span>
-              <span>SQL Server</span>
-            </div>
-            <div class="project-link">
-              <a
-                href="https://github.com/OthmanMohammad/Doctor-Who"
-                target="_blank"
-                class="code-link"
-                >Code available on GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
+        </section>
     </main>
-
-    <script src="assets/scripts/script.js"></script>
-    <script src="assets/scripts/main.js"></script>
-  </body>
+    <footer>
+        <p>&copy; 2024 Mohammad Othman</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
 </html>
