@@ -1,0 +1,133 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    margin: 0.5em 0;
+}
+
+.intro p {
+    font-size: 1.2em;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.links a {
+    color: #333;
+    font-size: 1.2em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.links a i {
+    margin-right: 5px;
+}
+
+/* Bio styles */
+.bio {
+    margin: 20px 0;
+}
+
+.bio h2 {
+    font-size: 2em;
+}
+
+.bio p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Skills and interests styles */
+.skills-interests {
+    margin: 20px 0;
+}
+
+.skills-interests h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.skills, .interests {
+    margin: 20px 0;
+}
+
+.skills h3, .interests h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.skills p, .interests p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
