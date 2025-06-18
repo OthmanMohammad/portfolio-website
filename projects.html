@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/lightning.png" type="image/png"> 
 </head>
 <body>
     <header>
@@ -23,10 +24,27 @@
     <main>
         <section id="projects" class="section-projects">
             <div class="container">
-                <h2 class="section-heading">LLMs, Agents & RAG</h2>
+                <h2 class="section-heading">VLMs, LLMs, Agents & RAG</h2>
 <hr class="heading-separator">
 <div class="projects-container">
-    <!-- Project 1: Wikipedia RAG Chatbot -->
+        <!-- Project 1: AI Live Vision -->
+        <div class="project-card">
+        <img src="images/live_vision.png" alt="Live AI Vision - Real-Time Camera Captioning">
+        <h3>Live AI Vision - Real-Time Camera Captioning</h3>
+        <p>A professional real-time computer vision application that generates intelligent captions for live webcam feeds using Azure Computer Vision API. Features deployment pipelines, rate limiting, and cost optimization. This project also presented a significant challenge: operate the application as efficiently and cost-effectively as possible in a live environment. I explored various approaches to strike the best balance between performance and resource consumption.</p>
+        <p><strong>Tools and Features:</strong></p>
+        <ul class="tools-used">
+            <li>Azure Computer Vision API</li>
+            <li>Real-time Processing</li>
+            <li>FastAPI</li>
+            <li>Rate Limiting</li>
+            <li>Vercel</li>
+        </ul>
+        <a href="https://real-time-webcam-vision-language-ca.vercel.app/" target="_blank">Try Live Demo</a>
+        <br>
+        <a href="https://drive.google.com/file/d/10uyflhbuzj33qQ6WbLLaRVnDi_WLyhdI/view?usp=sharing" target="_blank">Watch Demo Video</a>
+    </div>
+    <!-- Project 2: Wikipedia RAG Chatbot -->
     <div class="project-card">
         <img src="images/rag-wikipedia-chatbot.jpg" alt="Wikipedia RAG Chatbot">
         <h3>Wikipedia RAG Chatbot</h3>
@@ -42,7 +60,7 @@
         <a href="https://github.com/OthmanMohammad/wikipedia-rag-chatbot" target="_blank">Code available on GitHub</a>
     </div>
     
-    <!-- Project 2: Voice-TimeLogger-Agent -->
+    <!-- Project 3: Voice-TimeLogger-Agent -->
     <div class="project-card">
         <img src="images/voice-timelogger.jpg" alt="Voice TimeLogger Agent">
         <h3>Voice-TimeLogger-Agent</h3>
