@@ -186,14 +186,17 @@ section {
 .skills-category {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
+    gap: 20px;
 }
 
 .skills-category h3 {
     font-size: 1.5em;
     color: #333;
     width: 30%;
+    min-width: 250px;
     text-align: left;
+    margin: 0;
 }
 
 .skills-category p {
@@ -201,6 +204,7 @@ section {
     line-height: 1.6;
     width: 70%;
     text-align: left;
+    margin: 0;
 }
 
 /* Interests styles */
